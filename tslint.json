@@ -1,5 +1,12 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier", "tslint-config-airbnb"],
+  "defaultSeverity": "warning",
+  "rules": {
+    "no-constant-condition": true
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ],
   "linterOptions": {
     "exclude": [
       "config/**/*.js",
